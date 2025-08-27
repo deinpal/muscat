@@ -1,9 +1,36 @@
 [general]
 name=MUSCAT
-qgisMinimumVersion=3.0
-description=Markov-based Urban Simulation & Change Analysis Tool.
-version=1.0
-author=Souryabrata Pal
 email=souryabratapal@gmail.com
+author=Souryabrata Pal
+qgisMinimumVersion=3.0
+description=MUSCAT (Markov-based Urban Simulation and Change Analysis Tool) 
+    is a QGIS plugin that allows users to simulate and validate land-use/land-cover 
+    changes using a Markov chain model. It supports spatial variables, multiple 
+    time steps, and validation metrics.
+about=MUSCAT is designed for urban and regional land-use change modelling. 
+    It provides a simple interface to run Markov-based simulations, 
+    validate predictions with reference maps, and export transition 
+    matrices and area change tables.
+version=1.0
+tracker=https://github.com/deinpal/muscat/issues
+repository=https://github.com/deinpal/muscat
+; end of mandatory metadata
+
+; start of optional metadata
+category=Raster
+changelog=Changelog:
+    1.0 - First stable release with simulation, validation, and export features.
+
+tags=markov,land use,urban simulation,change detection,validation,qgis plugin
+
+homepage=https://github.com/deinpal/muscat
 icon=icon.png
-about=Predicts future LULC maps using Markov chains, supporting multiple spatial variables.
+
+; experimental flag (applies to the single version)
+experimental=False
+
+; deprecated flag (applies to the whole plugin and not only to the uploaded version)
+deprecated=False
+
+; if empty, it will be automatically set to major version + .99
+qgisMaximumVersion=3.99
