@@ -1,0 +1,9 @@
+[general]
+name=MUSCAT
+qgisMinimumVersion=3.0
+description=Markov-based Urban Simulation & Change Analysis Tool.
+version=1.0
+author=Souryabrata Pal
+email=souryabratapal@gmail.com
+icon=icon.png
+about=Predicts future LULC maps using Markov chains, supporting multiple spatial variables.

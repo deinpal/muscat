@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="1.0">
+ <class>MUSCATDriverDialog</class>
+ <widget class="QDialog" name="MUSCATDriverDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Add Spatial Variable</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- Spatial Variable Path -->
+   <item>
+    <layout class="QHBoxLayout" name="layout_variable">
+     <item><widget class="QLabel" name="labelPath"><property name="text"><string>Spatial Variable (Raster):</string></property></widget></item>
+     <item><widget class="QLineEdit" name="lineVariable"/></item>
+     <item><widget class="QPushButton" name="btnBrowseVariable"><property name="text"><string>Browse</string></property></widget></item>
+    </layout>
+   </item>
+
+   <!-- Influence Weight -->
+   <item>
+    <layout class="QHBoxLayout" name="layout_weight">
+     <item><widget class="QLabel" name="labelWeight"><property name="text"><string>Weight (0–1):</string></property></widget></item>
+     <item><widget class="QDoubleSpinBox" name="spinWeight">
+       <property name="minimum"><double>0.0</double></property>
+       <property name="maximum"><double>1.0</double></property>
+       <property name="singleStep"><double>0.1</double></property>
+       <property name="value"><double>1.0</double></property>
+     </widget></item>
+    </layout>
+   </item>
+
+   <!-- OK / Cancel -->
+   <item>
+    <layout class="QHBoxLayout" name="layout_buttons">
+     <item><widget class="QPushButton" name="btnOK"><property name="text"><string>OK</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnCancel"><property name="text"><string>Cancel</string></property></widget></item>
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

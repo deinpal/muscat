@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="1.0">
+ <class>MUSCATDialog</class>
+ <widget class="QDialog" name="MUSCATDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MUSCAT - Markov-based Urban Simulation and Change Analysis Tool</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- Initial (T0) -->
+   <item>
+    <layout class="QHBoxLayout" name="layout_initial">
+     <item><widget class="QLabel" name="labelInitial"><property name="text"><string>Initial Map (T0):</string></property></widget></item>
+     <item><widget class="QLineEdit" name="lineInitial"/></item>
+     <item><widget class="QPushButton" name="btnBrowseInitial"><property name="text"><string>Browse</string></property></widget></item>
+    </layout>
+   </item>
+
+   <!-- Final (T1) -->
+   <item>
+    <layout class="QHBoxLayout" name="layout_final">
+     <item><widget class="QLabel" name="labelFinal"><property name="text"><string>Final Map (T1):</string></property></widget></item>
+     <item><widget class="QLineEdit" name="lineFinal"/></item>
+     <item><widget class="QPushButton" name="btnBrowseFinal"><property name="text"><string>Browse</string></property></widget></item>
+    </layout>
+   </item>
+
+   <!-- Output -->
+   <item>
+    <layout class="QHBoxLayout" name="layout_out">
+     <item><widget class="QLabel" name="labelOutput"><property name="text"><string>Output Path:</string></property></widget></item>
+     <item><widget class="QLineEdit" name="lineOut"/></item>
+     <item><widget class="QPushButton" name="btnBrowseOut"><property name="text"><string>Save As</string></property></widget></item>
+    </layout>
+   </item>
+
+   <!-- Steps -->
+   <item>
+    <layout class="QHBoxLayout" name="layout_steps">
+     <item><widget class="QLabel" name="labelSteps"><property name="text"><string>Simulation Steps:</string></property></widget></item>
+     <item><widget class="QSpinBox" name="spinSteps">
+       <property name="minimum"><number>1</number></property>
+       <property name="maximum"><number>50</number></property>
+       <property name="value"><number>1</number></property>
+     </widget></item>
+    </layout>
+   </item>
+
+   <!-- Spatial Variables -->
+   <item>
+    <widget class="QPushButton" name="btnAddDriver">
+     <property name="text"><string>Add Spatial Variable</string></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="textDrivers">
+     <property name="placeholderText"><string>List of added spatial variables will appear here...</string></property>
+    </widget>
+   </item>
+
+   <!-- Run Mode + Run -->
+   <item>
+    <layout class="QHBoxLayout" name="layout_run">
+     <item>
+      <widget class="QComboBox" name="comboRunMode">
+       <item><property name="text"><string>Run Simulation</string></property></item>
+       <item><property name="text"><string>Run with Validation</string></property></item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnRun">
+       <property name="text"><string>Run</string></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
